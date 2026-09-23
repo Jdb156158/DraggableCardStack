@@ -8,7 +8,7 @@ A responsive, GSAP-powered card stack for presenting a team, product features, s
 
 [Open the interactive GitHub Pages preview →](https://jdb156158.github.io/DraggableCardStack/)
 
-![Draggable Card Stack interaction preview](docs/assets/draggable-card-stack.gif)
+[![Draggable Card Stack interaction preview](docs/assets/draggable-card-stack.gif)](https://jdb156158.github.io/DraggableCardStack/)
 
 ## Features
 
