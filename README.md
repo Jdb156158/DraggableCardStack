@@ -4,6 +4,10 @@ A responsive, GSAP-powered card stack for presenting a team, product features, s
 
 > 一个使用 GSAP 构建的响应式卡片堆叠交互，适合展示团队成员、产品功能、服务或作品。
 
+## Live demo
+
+[Open the interactive GitHub Pages preview →](https://jdb156158.github.io/DraggableCardStack/)
+
 ![Draggable Card Stack interaction preview](docs/assets/draggable-card-stack.gif)
 
 ## Features
