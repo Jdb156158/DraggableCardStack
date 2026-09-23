@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f2eee8" />
+    <title>Atelier — Draggable Card Stack</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Manrope:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="page-shell">
+      <nav class="topbar" aria-label="Main navigation">
+        <a class="brand" href="#" aria-label="Atelier home">
+          <span class="brand-mark" aria-hidden="true"></span>
+          Atelier
+        </a>
+        <p class="nav-note">Independent creative studio · London</p>
+        <a class="contact-link" href="mailto:hello@atelier.studio">Let’s talk <span>↗</span></a>
+      </nav>
+
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="eyebrow"><span></span> The people behind the work</div>
+        <h1 id="hero-title">Small team.<br /><em>Big energy.</em></h1>
+        <p class="intro">
+          We’re a close-knit crew of strategists, designers, and makers. Drag the cards to meet us.
+        </p>
+
+        <div class="stage-wrap">
+          <div class="gesture-hint" aria-hidden="true">
+            <svg viewBox="0 0 32 22" role="img"><path d="M2 11h27M23 4l7 7-7 7" /></svg>
+            <span>Drag to explore</span>
+          </div>
+
+          <div class="card-stage" aria-label="Team members. Drag the front card left or right to browse.">
+            <div class="card-stack">
+              <article class="profile-card" data-name="Maya Chen" tabindex="0" aria-label="Maya Chen, Creative Director">
+                <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=1000&q=88" alt="Portrait of Maya Chen" draggable="false" />
+                <div class="card-shade"></div>
+                <div class="card-number">01 / 05</div>
+                <div class="card-meta">
+                  <p>Creative Director</p>
+                  <h2>Maya Chen</h2>
+                </div>
+                <span class="card-plus" aria-hidden="true">+</span>
+              </article>
+
+              <article class="profile-card" data-name="Jon Bell" tabindex="0" aria-label="Jon Bell, Design Lead">
+                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=1000&q=88" alt="Portrait of Jon Bell" draggable="false" />
+                <div class="card-shade"></div>
+                <div class="card-number">02 / 05</div>
+                <div class="card-meta">
+                  <p>Design Lead</p>
+                  <h2>Jon Bell</h2>
+                </div>
+                <span class="card-plus" aria-hidden="true">+</span>
+              </article>
+
+              <article class="profile-card" data-name="Aisha Reed" tabindex="0" aria-label="Aisha Reed, Brand Strategist">
+                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=1000&q=88" alt="Portrait of Aisha Reed" draggable="false" />
+                <div class="card-shade"></div>
+                <div class="card-number">03 / 05</div>
+                <div class="card-meta">
+                  <p>Brand Strategist</p>
+                  <h2>Aisha Reed</h2>
+                </div>
+                <span class="card-plus" aria-hidden="true">+</span>
+              </article>
+
+              <article class="profile-card" data-name="Leo Martín" tabindex="0" aria-label="Leo Martín, Motion Designer">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=1000&q=88" alt="Portrait of Leo Martín" draggable="false" />
+                <div class="card-shade"></div>
+                <div class="card-number">04 / 05</div>
+                <div class="card-meta">
+                  <p>Motion Designer</p>
+                  <h2>Leo Martín</h2>
+                </div>
+                <span class="card-plus" aria-hidden="true">+</span>
+              </article>
+
+              <article class="profile-card" data-name="Nora Kim" tabindex="0" aria-label="Nora Kim, Producer">
+                <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1000&q=88" alt="Portrait of Nora Kim" draggable="false" />
+                <div class="card-shade"></div>
+                <div class="card-number">05 / 05</div>
+                <div class="card-meta">
+                  <p>Producer</p>
+                  <h2>Nora Kim</h2>
+                </div>
+                <span class="card-plus" aria-hidden="true">+</span>
+              </article>
+            </div>
+          </div>
+
+          <div class="counter" aria-live="polite">
+            <span class="counter-current">01</span><span class="counter-line"></span><span>05</span>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <span>Selected people · 2026</span>
+        <span>Swipe, drag, or use arrow keys</span>
+      </footer>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
